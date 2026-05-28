@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Messi Careca",
+        "posicao": "Atacante",
+        "camisa": 10,
+        "imagem": ""
+    },
+    {
+        "nome": "Giorgian de Arrascaeta",
+        "posicao": "Meio-campista",
+        "camisa": 14,
+        "imagem": "h"
+    },
+    {
+        "nome": "Bruno Henrique",
+        "posicao": "Atacante",
+        "camisa": 27,
+        "imagem": ""
+    },
+    {
+        "nome": "Pedro",
+        "posicao": "Atacante",
+        "camisa": 9,
+        "imagem": ""
+    }
+]

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+
+input::placeholder {
+    color: #a9a9a9;
+}
+
+input:focus {
+    border-color: #1a5fb4;
+}
+
+.responsive-form {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .responsive-form {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 25px; 
+    }
+
+    
+    .nome {
+        grid-column: span 3;
+    }
+    .email {
+        grid-column: span 3;
+    }
+
+    .telefone {
+        grid-column: span 2;
+    }
+    .assunto {
+        grid-column: span 2;
+    }
+    .curso {
+        grid-column: span 2;
+    }
+}

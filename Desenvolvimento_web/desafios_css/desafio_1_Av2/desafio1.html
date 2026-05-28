@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 1 - AV2
+  </title>
+  <link rel="stylesheet" href="desafio1.css">
+</head>
+<body>
+
+  <nav class="navbar">
+
+    <a href="#" class="logo">
+      <img src="imagens/logo_ugb.png" alt="UGB Ferp">
+    </a>
+
+    <div class="nav-links">
+      <a href="#">Cursos</a>
+      <a href="#">Graduação</a>
+      <a href="#">Contato</a>
+      <button class="btn-inscricao">Inscreva-se</button>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Cursos</a>
+      <a href="#">Graduação</a>
+      <a href="#">Contato</a>
+    </div>
+
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
